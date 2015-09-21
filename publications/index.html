@@ -1,0 +1,21 @@
+---
+layout: post-index
+title: "Publications"
+description: "A list of my publications"
+date: 2015-09-21
+image:
+  feature: books.jpg
+  credit: magic4walls
+  creditlink: http://www.magic4walls.com/wallpaper/books-photo-hd-wallpaper-3147.html
+comments: false
+---
+
+{% for post in site.posts %}
+    {% unless post.categories contains "publications" %}
+        {% continue %}
+    {% endunless %}
+    <article>
+        <h3>{{ post.title }}</h3>
+        {{ post.content }}
+    </article>
+{% endfor %}

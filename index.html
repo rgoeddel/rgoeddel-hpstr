@@ -1,16 +1,17 @@
 ---
 layout: post-index
-title: Latest Posts
-description: "Describe this nonsense."
+title: News From the Front
+description: "A front-page listing of everything that's going on right now."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
 image:
-  feature: abstract-1.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: BBB-side.jpg
 ---
 
 {% for post in paginator.posts %}
+{% unless post.categories contains "blog" %}
+    {% continue %}
+{% endunless %}
 <article class="hentry">
   <header>
     {% if post.image.feature %}

@@ -1,34 +1,48 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: About Me
 image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: BBB-side.jpg
+  credit:
+  creditlink:
 comments: false
-modified: 2014-12-24
+modified: 2015-09-18
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+## My name is Rob.
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+I'm a sixth year PhD candidate studying robotics at the University of Michigan.
+There's a pretty broad spectrum of things that count as robotics, so to ground
+things out a little further, I am part of the Computer Science department and
+work with Prof. Edwin Olson in the [APRIL Robotics Lab](http://www.april.eecs.umich.edu).
+My research interests lie in the intersection of navigation, perception,
+and human-in-the-loop. How can we communicate with robots effectively so that
+they may aid us in tasks that move them through large, potentially unknown
+environments?
 
-## What HPSTR brings to the table:
+When not banging my face against a keyboard, I often find myself cycling, playing
+ultimate as part of [Ann Arbor Ultimate](http://www.annarborultimate.org), or
+splitting a bomber of an exciting craft beer with my roommate Erik. Sometimes,
+I also just bang my face against my keyboard at home, but this time, for
+entertainment purposes. At the time of this writing, that means I'm probably
+playing Rocket League or Europa Universalis 4, since I'm a sucker for grand strategy.
+I'm also a board game hobbyist, and my recent discovery of the game
+[Brew Crafters](https://boardgamegeek.com/boardgame/139898/brew-crafters) has
+resulted in a joyful intersection of interests.
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Built-in support for Sass courtesy of Jekyll 2.x.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy.
+<figure>
+    <center>
+    <div class="inline-image"><img src="/images/brew-crafters.jpg" alt="Craft beer game? Count me in"></img>
+        <div class="image-credit">Image Source: <a href="http://www.dicehatemegames.com/">Dice Hate Me</a>
+        </div>
+    </div>
+    <figcaption>Reminiscent of Agricola, but without all that stress about
+    your family starving</figcaption>
+    </center>
+</figure>
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
-
-[^1]: Example: *domain.com/category-name/post-title*
+I've lived in Ann Arbor since 2006 (*Wait*, some astute reader exclaims; *I thought
+you were a sixth year.* Correct, dear reader! I also happened to pursue my
+undergraduate studies in CS at the UofM), but originally come from the small
+Borough of Fair Haven, NJ. As a result, I have strong opinions about pizza, bagels,
+and (almost entirely) unjustified distaste for the cities of Boston and Philadelphia.
