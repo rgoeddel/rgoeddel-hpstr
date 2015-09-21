@@ -10,7 +10,7 @@ hidden: true
 and Systems (IROS), 2013**<br>
 *Robert Goeddel and Edwin Olson*
 
-<img src="/images/bolt-fig.png" align="right" hspace="10px" width="50%">
+<img src="{{site.url}}/images/bolt-fig.png" align="right" hspace="10px" width="50%">
 **Abstract -**
 On-the-fly learning systems are necessary for the deployment of general purpose
 robots. New training examples for such systems are often supplied by mentor

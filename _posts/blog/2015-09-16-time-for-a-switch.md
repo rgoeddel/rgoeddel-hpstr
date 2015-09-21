@@ -2,7 +2,7 @@
 layout: post
 title: Time for a Switch
 modified:
-categories: ["blog"]
+categories: [blog]
 description: "A brief update as we get a grasp of Jekyll."
 tags: []
 image:

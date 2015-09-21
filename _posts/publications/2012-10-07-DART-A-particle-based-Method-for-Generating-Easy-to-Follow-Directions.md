@@ -10,7 +10,7 @@ hidden: true
 and Systems (IROS), 2012**<br>
 *Robert Goeddel and Edwin Olson*
 
-<img src="/images/dart-fig.png" align="right" hspace="10px" width="50%">
+<img src="{{site.url}}/images/dart-fig.png" align="right" hspace="10px" width="50%">
 **Abstract -**
 Despite evidence that human wayfinders consider directions involving landmarks
 or topological descriptions easier to follow, the majority of commerical

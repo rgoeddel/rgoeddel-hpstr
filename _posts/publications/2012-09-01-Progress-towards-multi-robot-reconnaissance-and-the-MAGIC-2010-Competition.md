@@ -11,7 +11,7 @@ hidden: true
 Pradeep Ranganathan, Robert Goeddel, Mihai Bulic, Jacob Crossman, and
 Bob Marinier*
 
-<img src="/images/magic-jfr.jpg" align="right" hspace="10px" width="50%">
+<img src="{{site.url}}/images/magic-jfr.jpg" align="right" hspace="10px" width="50%">
 **Abstract -**
 Tasks like search-and-rescue and urban reconnaissance benefit from large numbers
 of robots working together, but high levels of autonomy are needed in order to
