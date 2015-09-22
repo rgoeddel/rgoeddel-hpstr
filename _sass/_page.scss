@@ -136,18 +136,27 @@ body {
 	right: 0;
 	margin: 0 auto;
 	max-width: 440px;
-	padding: 10px 15px;
+	padding: 6px 10px;
 	background-color: rgba($base-color,0.5);
 	color: $white;
-	@include font-rem(12);
+	@include font-rem(8);
 	text-align: right;
 	@include border-radius(3px,0,0,3px);
 	z-index: 10;
+    @media #{$small} {
+        max-width: 560px;
+        padding: 8px 12px;
+        @include font-rem(10);
+    }
 	@media #{$medium} {
 		max-width: 760px;
+        padding: 10px 15px;
+        @include font-rem(12);
 	}
 	@media #{$large} {
 		max-width: 960px;
+        padding: 10px 15px;
+        @include font-rem(12);
 	}
 	a {
 		color: $white;
@@ -156,16 +165,17 @@ body {
 }
 
 .inline-image {
+    display: inline-block;
 	position: relative;
 	overflow: hidden;
-	&:after {
-		content: '';
-		position: relative;
-		background-color: rgba($base-color,0.3);
-	}
+    left: 50%;
+    transform: translateX(-50%);
 	img {
+        display: block;
 		position: relative;
-		margin: auto;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
 	}
 }
 

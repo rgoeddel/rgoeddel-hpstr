@@ -31,14 +31,13 @@ I'm also a board game hobbyist, and my recent discovery of the game
 resulted in a joyful intersection of interests.
 
 <figure>
-    <center>
-    <div class="inline-image"><img src="{{site.url}}/images/brew-crafters.jpg" alt="Craft beer game? Count me in"></img>
+    <div class="inline-image">
+    <img src="{{site.baseurl}}/images/brew-crafters.jpg" alt="Craft beer game? Count me in"></img>
         <div class="image-credit">Image Source: <a href="http://www.dicehatemegames.com/">Dice Hate Me</a>
         </div>
     </div>
-    <figcaption>Reminiscent of Agricola, but without all that stress about
+    <figcaption align="center">Reminiscent of Agricola, but without all that stress about
     your family starving</figcaption>
-    </center>
 </figure>
 
 I've lived in Ann Arbor since 2006 (*Wait*, some astute reader exclaims; *I thought
