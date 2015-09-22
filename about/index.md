@@ -32,7 +32,7 @@ resulted in a joyful intersection of interests.
 
 <figure>
     <div class="inline-image">
-    <img src="{{site.baseurl}}/images/brew-crafters.jpg" alt="Craft beer game? Count me in"></img>
+    <img src="{{site.url}}/images/brew-crafters.jpg" alt="Craft beer game? Count me in"></img>
         <div class="image-credit">Image Source: <a href="http://www.dicehatemegames.com/">Dice Hate Me</a>
         </div>
     </div>
