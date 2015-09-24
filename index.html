@@ -1,77 +1,88 @@
 ---
-layout: post-index
-title: News From the Front
-description: "A front-page listing of everything that's going on right now."
-tags: [Jekyll, theme, themes, responsive, blog, modern]
+layout: page
+title: Rob Goeddel
+description: "Portal to Rob Goeddel's website"
+tags:
 comments: false
+date: 2015-09-23 00:00:00 -0400
 image:
   feature: BBB-side.jpg
 ---
 
-{% for post in paginator.posts %}
-{% unless post.categories contains "blog" %}
-    {% continue %}
-{% endunless %}
 <article class="hentry">
-  <header>
-    {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
-    {% endif %}
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
-      {% if site.reading_time %}
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
-        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.content }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
+    <header>
+        <div class="entry-meta">
+            <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}"><a href="{{ site.url }}">{{ page.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+            {% if site.reading_time %}
+            <span class="entry-reading-time">
+             <i class="fa fa-clock-o"></i>
+             {% assign readtime = page.content | number_of_words | divided_by:site.words_per_minute %}
+             Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+            </span><!-- /.entry-reading-time -->
+            {% endif %}
+        </div><!-- /.entry-meta -->
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="{{ site.url }}" class="btn">Previous</a>
-    {% else %}
-      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
-    {% endif %}
-  {% else %}
-    Previous
-  {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.url }}">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.url }}/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.next_page %}
-    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Next</a>
-  {% else %}
-    Next
-  {% endif %}
-</div><!-- /.pagination -->
+        <h1 class="entry-title">Hello, visitor!</h1>
+    </header>
+
+    <!-- image of me -->
+    <p>Willkommen, bienvenue, bonvena, welcome! I am a
+    PhD candidate studying Computer Science at the
+    <a href="https:/www.cse.umich.edu/">University of Michigan</a>.
+    Check out the sidebar to learn a little bit more about me and my work.
+    </p>
+
+    <h1 class="entry-title">News</h1>
+    <table>
+    <tbody>
+    <!-- smart carts -->
+    <tr><td>
+    <p align="justify">
+    <div class="news-image">
+    <img src="{{ site.url }}/images/mule-lm.png"/>
+    <div class="image-credit">Image source: <a href="http://april.eecs.umich.edu">APRIL Lab</a>
+    </div></div>
+    <strong>August 2015</strong>
+    We have officially received our first vehicle for the
+    <a href="https://april.eecs.umich.edu/smartcarts/">UM:SmartCarts</a> project!
+    In this project, we'll be developing an autonomous transportation network
+    for the University of Michigan Engineering campus, allowing us to study
+    the problems that arise when developing next-gen networks.
+    </div>
+    </p>
+    </td></tr>
+
+    <!-- MCity -->
+    <tr><td>
+    <p align="justify">
+    <div class="news-image">
+    <img src="{{ site.url }}/images/mcity-aeriel.jpg"/>
+    <div class="image-credit">Image source: <a href="http://www.mtc.umich.edu/media">The University of Michigan</a>
+    </div></div>
+    <strong>July 2015 - </strong>
+    <a href="http://www.mtc.umich.edu/test-facility">MCity</a> is official open!
+    The University of Michigan's one-of-a-kind vehicle testing facility was
+    designed to allow researchers to study both connected and autonomous vehicles.
+    Check out the press release <a href="http://www.mtc.umich.edu/vision/news-events/u-m-opens-mcity-test-environment-connected-and-driverless-vehicles">here</a>
+    </p>
+    </td></tr>
+
+    <!-- muscatatuck -->
+    <tr><td>
+    <p align="justify">
+    <div class="news-image">
+    <img src="{{ site.url }}/images/muscatatuck-tunnels.jpg" width="30%" hspace="10px" style="float:right"/>
+    </div>
+    <strong>June 2015 - </strong>
+    The <a href="http://www.april.eecs.umich.edu">APRIL Lab</a> visited the
+    <a href="http://www.atterburymuscatatuck.in.ng.mil/">Muscatatuck Urban Training Center (MUTC)</a>
+    in Butlerville, IN to do field testing of our new fleet of MAGIC robots. We
+    were able to run missions in facilities ranging from underground tunnel
+    networks to shanty towns. Thanks to the folks at MUTC for being great hosts!
+    </p>
+    </td></tr>
+    </tbody>
+    </table>
+
+</article><!-- /.hentry -->
+
