@@ -161,46 +161,6 @@ body {
 	}
 }
 
-.news-image {
-    display: inline-block;
-    position: relative;
-    float: right;
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    @media #{$small} {
-        width: 200px;
-    }
-    @media #{$medium} {
-        width: 250px;
-    }
-    @media #{$large} {
-        width: 250px;
-    }
-    img {
-        position: relative;
-        display: block;
-        width: auto;
-        height: auto;
-        margin: 0;
-    }
-}
-
-.inline-image {
-    display: inline-block;
-	position: relative;
-	overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%);
-	img {
-        display: block;
-		position: relative;
-        height: auto;
-        max-width: 100%;
-        margin: 0;
-	}
-}
-
 // Single Post and Page
 // --------------------------------------------------
 .entry-meta {
@@ -254,15 +214,12 @@ header .entry-meta {
 		@media #{$medium} {
 			margin-left: 10px;
 			margin-right: 10px;
-			padding: 20px 30px;
+			padding: 50px 80px;
 		}
 		@media #{$large} {
 			max-width: 800px;
 			margin: 50px auto 30px auto;
 			padding: 50px 80px;
-			> p:first-child {
-				@include font-size(20);
-			}
 		}
 	}
 	#disqus_thread {
@@ -444,6 +401,61 @@ header .entry-meta {
 		@include border-radius(3px,0,0,3px); // round image corners
 	}
 }
+
+.news-list {
+    ul {
+        padding: 0;
+        margin: 0 0 0 0;
+        list-style-type: none;
+    }
+    li {
+        margin: 0 0 0 0;
+        overflow: auto;
+    }
+    img {
+
+    }
+}
+.news-image {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    @media #{$small} {
+        width: 200px;
+    }
+    @media #{$medium} {
+        width: 250px;
+    }
+    @media #{$large} {
+        width: 250px;
+    }
+    img {
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+
+.inline-image {
+    display: inline-block;
+	position: relative;
+	overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+	img {
+        display: block;
+		position: relative;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+	}
+}
+
 
 // Footer
 // --------------------------------------------------

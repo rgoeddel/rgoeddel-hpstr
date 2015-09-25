@@ -25,18 +25,18 @@ image:
         <h1 class="entry-title">Hello, visitor!</h1>
     </header>
 
-    <!-- image of me -->
-    <p>Willkommen, bienvenue, bonvena, welcome! I am a
+    <!-- image of me XXX -->
+    <p>Willkommen, bienvenue, bonvenon, welcome! I am a
     PhD candidate studying Computer Science at the
     <a href="https:/www.cse.umich.edu/">University of Michigan</a>.
     Check out the sidebar to learn a little bit more about me and my work.
     </p>
 
+    <!-- switch to ticker or paginated entries independently scrollable -->
     <h1 class="entry-title">News</h1>
-    <table>
-    <tbody>
+    <div class="news-list"><ul>
     <!-- smart carts -->
-    <tr><td>
+    <li>
     <p align="justify">
     <div class="news-image">
     <img src="{{ site.url }}/images/mule-lm.png"/>
@@ -48,12 +48,11 @@ image:
     In this project, we'll be developing an autonomous transportation network
     for the University of Michigan Engineering campus, allowing us to study
     the problems that arise when developing next-gen networks.
-    </div>
     </p>
-    </td></tr>
+    </li>
 
     <!-- MCity -->
-    <tr><td>
+    <li>
     <p align="justify">
     <div class="news-image">
     <img src="{{ site.url }}/images/mcity-aeriel.jpg"/>
@@ -65,10 +64,10 @@ image:
     designed to allow researchers to study both connected and autonomous vehicles.
     Check out the press release <a href="http://www.mtc.umich.edu/vision/news-events/u-m-opens-mcity-test-environment-connected-and-driverless-vehicles">here</a>
     </p>
-    </td></tr>
+    </li>
 
     <!-- muscatatuck -->
-    <tr><td>
+    <li>
     <p align="justify">
     <div class="news-image">
     <img src="{{ site.url }}/images/muscatatuck-tunnels.jpg" width="30%" hspace="10px" style="float:right"/>
@@ -80,9 +79,8 @@ image:
     were able to run missions in facilities ranging from underground tunnel
     networks to shanty towns. Thanks to the folks at MUTC for being great hosts!
     </p>
-    </td></tr>
-    </tbody>
-    </table>
+    </li>
+    </ul></div>
 
 </article><!-- /.hentry -->
 
